@@ -1,4 +1,13 @@
-<label for="email">email</label>
+ <% arrays = ['email','username', 'pin', 'website','address', 'alias'] %>
+
+    <% arrays.each do |array| %>
+    <label for="<%= array %>"> <%= array %> </label>
+    <input type="text" name="<%= array %>" id="<%= array %>" class="fancy_form" >
+    <% end %>
+
+
+
+<!-- <label for="email">email</label>
 <input type="text" name="email" id="email" class="fancy_form" >
 
 <label for="username">username</label>
@@ -14,4 +23,4 @@
 <input type="text" name="address" id="address" class="fancy_form" >
 
 <label for="alias">alias</label>
-<input type="text" name="alias" id="alias" class="fancy_form" >
+<input type="text" name="alias" id="alias" class="fancy_form" > -->
